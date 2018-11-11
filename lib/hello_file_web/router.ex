@@ -16,6 +16,7 @@ defmodule HelloFileWeb.Router do
   scope "/", HelloFileWeb do
     pipe_through :browser
 
+    resources "/posts", PostController
     get "/", PageController, :index
   end
 
